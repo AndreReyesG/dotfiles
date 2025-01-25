@@ -10,6 +10,7 @@ local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night Moon"
 -- config.color_scheme = "Gruvbox Dark (Gogh)"
 
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 15
 config.enable_tab_bar = false
 
