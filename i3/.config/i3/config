@@ -146,9 +146,6 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 assign [class="obsidian"] $ws3
-# dirctory gui
-# WM_CLASS(STRING) = "org.gnome.Nautilus", "Org.gnome.Nautilus"
-# Headphones D0:8A:55:26:04:38
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
