@@ -1,8 +1,13 @@
 print("hello neovim")
 
-vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<space>x", ":.lua<CR>")
-vim.keymap.set("v", "<space>x", ":lua<CR>")
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+require("andre.core")
+
+vim.keymap.set("n", "<leader><leader>x", "<cmd>source %<CR>")
+vim.keymap.set("n", "<leader>x", ":.lua<CR>")
+vim.keymap.set("v", "<leader>x", ":lua<CR>")
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
