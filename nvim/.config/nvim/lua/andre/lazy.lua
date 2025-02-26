@@ -16,6 +16,7 @@ end
 
 -- Hey! Put lazy into the runtimepath for neovim
 -- echo stdpath("data")
+-- echo nvim_list_runtime_paths()
 -- :checkhealth lazy
 vim.opt.rtp:prepend(lazypath)
 
