@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 require("andre.core")
+require("andre.lazy")
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
