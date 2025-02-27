@@ -188,5 +188,5 @@ bar {
 }
 
 # My configuration
-exec_always nitrogen --restore
 bindsym $mod+Shift+x exec i3lock
+exec_always feh --bg-scale ~/Imágenes/wallpapers/hokusai-wave.jpg
