@@ -1,4 +1,5 @@
 -- small terminal
+local job_id = 0
 vim.keymap.set("n", "<leader>st", function()
   vim.cmd.vnew()
   vim.cmd.term()
