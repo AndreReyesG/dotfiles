@@ -16,6 +16,11 @@ return {
         "rust",
         "python",
         "php",
+        "html",
+        "css",
+        "javascript",
+        "bash",
+        "latex",
       },
 
       -- Automatically install missing parsers when entering buffer
