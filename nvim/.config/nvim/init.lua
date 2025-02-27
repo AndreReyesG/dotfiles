@@ -1,5 +1,9 @@
 print("hello neovim")
 
+--vim.cmd([[
+--set path+=lua/andre/plugins
+--]])
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
