@@ -17,7 +17,7 @@ return {
     -- Finding Files
     vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "finding files" })
     -- Edit nvim config from anywhere
-    vim.keymap.set("n", "<leader>cn", function()
+    vim.keymap.set("n", "<leader>en", function()
       require("telescope.builtin").find_files {
         cwd = vim.fn.stdpath("config")
       }

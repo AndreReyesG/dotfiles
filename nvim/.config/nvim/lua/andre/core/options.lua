@@ -35,8 +35,8 @@ opt.breakindent = true
 opt.undofile = true
 
 -- Decrease update time
-opt.updatetime = 250
-opt.timeoutlen = 300
+--opt.updatetime = 250
+--opt.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
 opt.completeopt = "menuone,noselect"
