@@ -6,6 +6,14 @@ return {
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
   },
   config = function()
+    require("telescope").setup({
+      extensions = {
+        fzf = {}
+      }
+    })
+
+    require("telescope").load_extension("fzf")
+
     -- Finding Files
     vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "finding files" })
     -- Edit nvim config from anywhere
