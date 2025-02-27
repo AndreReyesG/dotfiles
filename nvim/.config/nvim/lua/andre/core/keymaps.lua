@@ -17,3 +17,5 @@ keymap.set("n", "<c-k>", ":wincmd k<cr>", { desc = "go up"} )
 keymap.set("n", "<c-j>", ":wincmd j<cr>", { desc = "go down"} )
 keymap.set("n", "<c-h>", ":wincmd h<cr>", { desc = "go right"} )
 keymap.set("n", "<c-l>", ":wincmd l<cr>", { desc = "go left"} )
+
+keymap.set("t", "jj", "<c-\\><c-n>", { desc = "exit terminal mode with jj" })
