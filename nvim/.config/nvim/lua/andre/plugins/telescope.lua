@@ -22,5 +22,11 @@ return {
         cwd = vim.fn.stdpath("config")
       }
     end)
+    -- Edit Packages (See how a plugin works)
+    vim.keymap.set("n", "<leader>ep", function()
+      require("telescope.builtin").find_files {
+        cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy")
+      }
+    end)
   end
 }
