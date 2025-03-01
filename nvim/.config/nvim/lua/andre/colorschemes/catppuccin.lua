@@ -5,6 +5,10 @@ local catppuccin = {
   config = function()
     require("catppuccin").setup({
       flavor = "mocha",
+      background = {
+        dark = "mocha",
+        light = "latte",
+      }
     })
     vim.cmd.colorscheme "catppuccin"
     require("lualine").setup { options = { theme = "catppuccin" } }
