@@ -9,7 +9,6 @@ export PATH="$PATH:/opt/nvim/"
 # Alias
 alias para="cd ~/Documentos/PARA"
 alias dot="cd ~/dotfiles"
-alias cnvim="cd ~/.config/nvim"
 # TMUX
 alias ta="tmux a"
 # Habilita verdadero color
