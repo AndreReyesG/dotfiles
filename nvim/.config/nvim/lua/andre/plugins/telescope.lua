@@ -14,10 +14,10 @@ return {
 
     require("telescope").load_extension("fzf")
 
-    -- Finding Help
-    vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags, { desc = "find help" })
     -- Finding Files
-    vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "finding files" })
+    vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
+    -- Finding Help
+    vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags)
     -- Edit nvim config from anywhere
     vim.keymap.set("n", "<leader>en", function()
       require("telescope.builtin").find_files {
