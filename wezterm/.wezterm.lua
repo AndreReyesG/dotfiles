@@ -9,13 +9,14 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 local flavor = {
   "Kanagawa (Gogh)",
-  "kanagawabones",
-  "Tokyo Night Moon",
+  "Gruvbox (Gogh)",
+  "Catppuccin Mocha",
   "Catppuccin Latte",
+  "Tokyo Night Moon",
   "Dracula (Official)"
 }
 
-config.color_scheme = flavor[1]
+config.color_scheme = flavor[2]
 
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 18
