@@ -7,16 +7,33 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-local flavor = {
-  "Kanagawa (Gogh)",
-  "Gruvbox (Gogh)",
-  "Catppuccin Mocha",
-  "Catppuccin Latte",
-  "Tokyo Night Moon",
-  "Dracula (Official)"
-}
+package.path = package.path .. ";/home/andre/dotfiles/nvim/.config/nvim/lua/?.lua"
+local colorscheme = require "andre.plugins.colorscheme"
 
-config.color_scheme = flavor[2]
+--[[
+-- This for testing
+print(colorscheme.background)
+print(colorscheme.name)
+]]
+
+local setcolorscheme = ""
+if colorscheme.name == "kanagawa" then
+  if colorscheme.background == "light" then
+    setcolorscheme = "Gruvbox (Gogh)"
+  else
+    setcolorscheme = "Kanagawa (Gogh)"
+  end
+elseif colorscheme.name == "catppuccin" then
+  if colorscheme.background == "light" then
+    setcolorscheme = "Catppuccin Latte"
+  else
+    setcolorscheme = "Tokyo Night Moon"
+  end
+else
+  setcolorscheme = "Dracula (Official)"
+end
+
+config.color_scheme = setcolorscheme
 
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 18
