@@ -15,8 +15,9 @@ opt.mouse = "a"
 opt.clipboard = "unnamedplus"
 
 -- colorscheme
+local background = require "andre.plugins.colorscheme".background
 opt.termguicolors = true
-opt.background = "dark"
+opt.background = background
 opt.signcolumn = "yes"
 
 -- split windows
