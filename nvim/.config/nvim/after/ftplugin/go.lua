@@ -12,3 +12,7 @@ end)
 vim.keymap.set("n", "<leader>t", function()
   vim.fn.chansend(job_id, {"go test\r\n"})
 end)
+
+vim.keymap.set("n", "<leader>q", function()
+  vim.fn.chansend(job_id, {"exit\r\n"})
+end)
