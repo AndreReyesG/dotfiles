@@ -22,6 +22,7 @@ return {
         "javascript",
         "bash",
         "latex",
+        "zig",
       },
 
       -- Automatically install missing parsers when entering buffer
