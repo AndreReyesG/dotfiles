@@ -17,6 +17,7 @@ return {
     -- Keymaps
     vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files) -- Finding Files
     vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags) -- Finding Help
+    vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files)
     -- Edit nvim config from anywhere
     vim.keymap.set("n", "<leader>en", function()
       require("telescope.builtin").find_files {
@@ -29,5 +30,10 @@ return {
         cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy")
       }
     end)
+    -- TODO: find my dotfiles
+    --vim.keymap.set("n", "<leader>ed", function()
+    --  require("telescope.builtin").git_files {
+    --  }
+    --end)
   end
 }
