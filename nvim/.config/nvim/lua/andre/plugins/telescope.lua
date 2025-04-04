@@ -18,7 +18,7 @@ return {
     vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files) -- Finding Files
     vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags) -- Finding Help
     vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files)
-    vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files)
+    vim.keymap.set("n", "<leader>gs", require("telescope.builtin").git_status)
     vim.keymap.set("n", "<leader>b", require("telescope.builtin").buffers)
     -- Edit nvim config from anywhere
     vim.keymap.set("n", "<leader>en", function()
