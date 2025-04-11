@@ -10,18 +10,14 @@ local config = wezterm.config_builder()
 package.path = package.path .. ";/home/andre/dotfiles/nvim/.config/nvim/lua/?.lua"
 local colorscheme = require "andre.plugins.colorscheme"
 
---[[
--- This for testing
-print(colorscheme.background)
-print(colorscheme.name)
-]]
-
 local setcolorscheme = ""
-if colorscheme.name == "kanagawa" then
+if colorscheme.name == "kanagawa" or colorscheme.name == "gruvbox" then
   if colorscheme.background == "light" then
     setcolorscheme = "Gruvbox (Gogh)"
-  else
+  elseif colorscheme.name == "kanagawa" then
     setcolorscheme = "Kanagawa (Gogh)"
+  elseif colorscheme.name == "gruvbox" then
+    setcolorscheme = "Gruvbox Dark (Gogh)"
   end
 elseif colorscheme.name == "catppuccin" then
   if colorscheme.background == "light" then
