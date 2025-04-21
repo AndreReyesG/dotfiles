@@ -6,7 +6,7 @@ vim.keymap.set("n", "<leader>st", function()
   vim.cmd.wincmd("J")
   vim.api.nvim_win_set_height(0, 5)
 
-  job_id = vim.bo.channel
+  job_id = vim.b.terminal_job_id
 end)
 
 vim.api.nvim_create_autocmd("VimLeavePre", {
