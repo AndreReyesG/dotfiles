@@ -4,9 +4,8 @@ local kanagawa = {
   priority = 1000,
   config = function()
     require("kanagawa").setup({
-      theme = "wave",
       background = {
-        dark = "wave",
+        dark = "dragon",
         light = "lotus",
       }
     })

@@ -1,8 +1,8 @@
 print("hello neovim")
 
---vim.cmd([[
---set path+=lua/andre/plugins
---]])
+vim.cmd([[
+"set path+=lua/andre/plugins "set paths when used :find
+]])
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"

@@ -24,6 +24,7 @@ return {
         "latex",
         "zig",
         "java",
+        "typst",
       },
 
       -- Automatically install missing parsers when entering buffer
